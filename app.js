@@ -11,7 +11,7 @@ var app = express();
 
 //Set up mongoose connection
 const mongoose = require('mongoose');
-const mongoDB = mongodb+srv://Elijah:<Kevin015>@cluster0-nt5my.mongodb.net/local_library?retryWrites=true&w=majority;
+const mongodb = 'mongodb+srv: //Elijah:<Kevin015>@cluster0-nt5my.mongodb.net/local_library?retryWrites=true';
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
